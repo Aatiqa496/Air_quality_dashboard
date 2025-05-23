@@ -1,0 +1,15 @@
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set up page
+st.set_page_config(page_title="Air Quality Dashboard", layout="wide")
+
+# Load CSV data directly
+df = pd.read_csv("air_quality_data.csv")  # Replace with actual filename
+
+st.title("📊 Air Quality Dashboard")
+
+# Basic filters and plots go here...
+st.write("Data Preview", df.head())
